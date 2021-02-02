@@ -1,0 +1,265 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <!--  Create Tables  -->
+    <changeSet id="1.0" author="Matvey Shadrin">
+        <createTable tableName="pet">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="id_user" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="id_typepet" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="sex" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="birthday" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="alive" type="BOOLEAN" defaultValue="true">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="id_father" type="INT"/>
+            <column name="id_mother" type="INT"/>
+            <column name="image" type="BYTEA"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.1" author="Matvey Shadrin">
+        <createTable tableName="user">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="id_role" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="login" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="first_name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="last_name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.2" author="Matvey Shadrin">
+        <createTable tableName="role">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="name" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.3" author="Matvey Shadrin">
+        <createTable tableName="message">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="from" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="to" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="message_body" type="VARCHAR(10000)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="date" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="read_date" type="TIMESTAMP">
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.4" author="Matvey Shadrin">
+        <createTable tableName="sale_pets">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="id_pet" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="old_owner" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="price" type="DECIMAL">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="date_sale" type="TIMESTAMP">
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.5" author="Matvey Shadrin">
+        <createTable tableName="mating_pets">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="from_pet" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="to_pet" type="INT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="date_mating" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="done" type="BOOLEAN">
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.6" author="Matvey Shadrin">
+        <createTable tableName="type_pet">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+
+            <column name="type_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <!--  Set Foreign Key  -->
+    <changeSet id="2.0" author="Matvet Shadrin">
+        <!--Pet table-->
+        <addForeignKeyConstraint
+                baseTableName="pet"
+                baseColumnNames="id_user"
+                constraintName="fk_pet_user"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="user"
+                referencedColumnNames="id"/>
+        <addForeignKeyConstraint
+                baseTableName="pet"
+                baseColumnNames="id_typepet"
+                constraintName="fk_pet_typepet"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="type_pet"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="2.1" author="Matvey Shadrin">
+        <!--User table-->
+        <addForeignKeyConstraint
+                baseTableName="user"
+                baseColumnNames="id_role"
+                constraintName="fk_user_role"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="role"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="2.2" author="Matvey Shadrin">
+        <!--Message Table-->
+        <addForeignKeyConstraint
+                baseTableName="message"
+                baseColumnNames="from"
+                constraintName="fk_from_user"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="user"
+                referencedColumnNames="id"/>
+        <addForeignKeyConstraint
+                baseTableName="message"
+                baseColumnNames="from"
+                constraintName="fk_to_user"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="user"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="2.3" author="Matvey Shadrin">
+        <!--SalePets Table-->
+        <addForeignKeyConstraint
+                baseTableName="sale_pets"
+                baseColumnNames="id_pet"
+                constraintName="fk_sale_pets_pet"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="pet"
+                referencedColumnNames="id"/>
+        <addForeignKeyConstraint
+                baseTableName="sale_pets"
+                baseColumnNames="old_owner"
+                constraintName="fk_sale_pets_user"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="user"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="2.4" author="Matvey Shadrin">
+        <!--MatingPets Table-->
+        <addForeignKeyConstraint
+                baseTableName="mating_pets"
+                baseColumnNames="from_pet"
+                constraintName="fk_mating_from_pet"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="pet"
+                referencedColumnNames="id"/>
+        <addForeignKeyConstraint
+                baseTableName="mating_pets"
+                baseColumnNames="to_pet"
+                constraintName="fk_mating_to_pet"
+                onDelete="CASCADE"
+                onUpdate="RESTRICT"
+                referencedTableName="pet"
+                referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

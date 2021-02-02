@@ -1,0 +1,308 @@
+#e344_623 {
+    opacity: 1;
+    width: 599.999755859375px;
+    height: 452.06488037109375px;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+
+#pet_profile_main_group {
+    opacity: 1;
+    width: 600px;
+    height: 290px;
+    position: absolute;
+    left: 215px;
+    top: 20px;
+}
+
+#sex_group {
+    opacity: 1;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 189px;
+    bottom: 115px;
+}
+
+#sex_background {
+    background-color: rgba(224.000001847744, 224.000001847744, 224.000001847744, 1);
+    opacity: 1;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#sex_image {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 10px;
+    right: 45px;
+}
+
+#sex_label {
+    color: black;
+    opacity: 1;
+    width: 120px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+.pet-edit-form {
+    width: 250px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-update-option {
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_form_text_styles {
+    color: black;
+    font-family: Roboto, serif;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.select_form_style {
+    width: 170px;
+    height: 25px;
+    background-color: lightgrey;
+    color: #fcfcfc;
+    font-size: 16px;
+    font-family: Roboto, serif;
+}
+
+#pet_main_info_group {
+    opacity: 1;
+    width: 162px;
+    height: 250px;
+    position: absolute;
+    left: 15.018537521362305px;
+    bottom: 15px;
+    overflow: visible;
+}
+
+#general_my_pet_background {
+    background-color: rgba(224.000001847744, 224.000001847744, 224.000001847744, 1);
+    opacity: 1;
+    width: 160px;
+    height: 185px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+}
+
+#pet_avatar {
+    opacity: 1;
+    border: 1px solid rgba(3.846246236935258, 0, 192.31249898672104, 1);
+    width: 162px;
+    height: 162px;
+    position: absolute;
+    left: 0;
+    border-radius: 128px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+}
+
+#e344_686 {
+    width: 162px;
+    height: 162px;
+    position: absolute;
+    border-radius: 128px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+}
+
+#label_pet_name {
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    width: 162px;
+    height: 11.26407527923584px;
+    position: absolute;
+    left: 0px;
+    top: 172px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+#pet_buttons_actions_group {
+    opacity: 1;
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    left: 20px;
+    top: 190px;
+}
+
+
+#pet_type_birthday_group {
+    position: absolute;
+    left: 189px;
+    bottom: 15px;
+}
+
+#pet_type_birthday_background {
+    background-color: rgba(224.000001847744, 224.000001847744, 224.000001847744, 1);
+    width: 150px;
+    height: 90px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#label_pet_type {
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    font-family: Roboto, serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+#label_pet_birthday {
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 33px;
+    font-family: Roboto, serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+#meeting_group_form {
+    background-color: rgba(224.000001847744, 224.000001847744, 224.000001847744, 1);
+    width: 225px;
+    height: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    border-radius: 10px;
+}
+
+#meeting_group_form_title_label {
+    text-align: center;
+    padding-top: 35px;
+}
+
+#meeting_group_form_from_pet {
+    padding: 10px;
+    text-align: center;
+}
+
+#meeting_group_form_date_label {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#meeting_group_form_date_form {
+
+    text-align: center;
+}
+
+#meeting_group_form_button {
+    margin-left: 55px;
+    margin-top: 12px;
+}
+
+#pet_profile_group_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 600px;
+    height: 290px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#my_pet_profile_group_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 600px;
+    height: 290px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.v72_673 {
+    width: 600px;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 575px;
+    overflow: hidden;
+}
+
+
+.pet_group_main_label {
+    width: 599.999755859375px;
+    height: 30px;
+    color: rgba(130, 130, 130, 1);
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+#edit_form {
+    color: rgba(189.00000393390656, 189.00000393390656, 189.00000393390656, 1);
+    opacity: 1;
+    width: 599.999755859375px;
+    height: 700px;
+    position: absolute;
+    left: 60px;
+    top: 109.52941131591797px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+#add_pet_form {
+    color: rgba(189.00000393390656, 189.00000393390656, 189.00000393390656, 1);
+    opacity: 1;
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    left: 30px;
+    top: 109.52941131591797px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+

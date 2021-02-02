@@ -1,0 +1,28 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="1.0" author="Ivan Markelov">
+        <insert tableName="message">
+            <column name="from" value="2"/>
+            <column name="to" value="1"/>
+            <column name="message_body" value="Hello, how are you doing?"/>
+            <column name="date" value="2021-01-19 11:30:01.587309"/>
+        </insert>
+
+        <insert tableName="message">
+            <column name="from" value="2"/>
+            <column name="to" value="1"/>
+            <column name="message_body" value="Please respond..."/>
+            <column name="date" value="2021-01-19 11:35:01.587309"/>
+        </insert>
+
+        <insert tableName="message">
+            <column name="from" value="2"/>
+            <column name="to" value="1"/>
+            <column name="message_body" value="This is it."/>
+            <column name="date" value="2021-01-19 11:36:01.587309"/>
+            <column name="read_date" value="2021-01-19 11:36:01.587309"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,147 @@
+html {
+    display: inline-block;
+    vertical-align: top;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgba(19.5, 111, 195.5, 1);
+    color: white;
+    margin: 5px;
+    min-width: 100px;
+}
+
+.btn-link {
+    padding: 7px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    font-family: Tahoma;
+    font-weight: 400;
+    background-color: rgba(19.5, 111, 195.5, 1);
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    background-color: lightblue;
+    transition-duration: 0.4s;
+    transition-delay: -0.1s;
+}
+
+.button:hover {
+    background-color: lightblue;
+    transition-duration: 0.4s;
+    transition-delay: -0.1s;
+}
+
+div {
+    margin: auto;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.user-welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.vertical-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.unread-messages {
+    font-weight: bold;
+}
+
+.project-info {
+    margin: 15px auto;
+    padding: 25px;
+    display: block;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user-options {
+    margin: 15px auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-field {
+    margin: 15px auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.result-items {
+    margin: 15px auto;
+    min-width: 830px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.filter-select {
+    margin: 5px;
+}
+
+.error-container {
+    margin: 15px auto;
+    padding: 25px;
+    display: flex;
+    align-content: center;
+    max-width: 400px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.error-container > h3, h4 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    max-width: 250px;
+    padding-bottom: 5px;
+}
+
+.error-img {
+    margin: auto;
+    max-width: 300px;
+}
+
+table {
+    min-width: 800px;
+    border-collapse: collapse;
+    margin: 15px auto;
+    border: none;
+}
+
+td, th {
+    border: 1px solid #BDBDBD;
+}
+
+.sale-pet-table {
+    min-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    margin: auto;
+}

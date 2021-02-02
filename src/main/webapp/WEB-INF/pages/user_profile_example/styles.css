@@ -1,0 +1,587 @@
+a {
+    outline: none;
+    text-decoration: none;
+    color: #828282;
+}
+
+a:hover {
+    background-color: #e0e0e0;
+    text-decoration: underline;
+}
+
+body {
+    background: rgba(232.68750607967377, 232.68750607967377, 232.68750607967377, 1);
+}
+
+#site_wrapper {
+    margin: auto;
+    max-width: 1600px;
+}
+
+#main_container {
+    overflow: hidden;
+    background-color: rgba(232.68750607967377, 232.68750607967377, 232.68750607967377, 1);
+    opacity: 1;
+    width: 1600px;
+    height: 1200px;
+    position: absolute;
+}
+
+/*User profile style group*/
+#profile_group {
+    opacity: 1;
+    width: 200px;
+    height: 235px;
+    position: absolute;
+    left: 361px;
+    top: 20px;
+}
+
+#profile_style {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 200px;
+    height: 235px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#profile_avatar {
+    border-radius: 500px;
+    opacity: 1;
+    border: 1px solid;
+    border-color: rgba(3.846246236935258, 0, 192.31249898672104, 1);
+    width: 126.66666412353516px;
+    height: 126.66666412353516px;
+    position: absolute;
+    left: 37.33333206176758px;
+    top: 12px;
+    background-image: url(images/eavatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profile_name {
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    width: 113.33333587646484px;
+    height: 23.33333396911621px;
+    position: absolute;
+    left: 44px;
+    top: 150px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: undefined;
+    font-weight: bold;
+}
+
+#profile_delimiter {
+    opacity: 1;
+    border: 1px solid rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 166.6666717529297px;
+    height: 0px;
+    position: absolute;
+    left: 20.66666603088379px;
+    top: 168.6666717529297px;
+}
+
+#profile_edit_button_group {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 123.33333587646484px;
+    height: 23.33333396911621px;
+    position: absolute;
+    left: 38.66666793823242px;
+    top: 175px;
+}
+
+#profile_edit_button_style {
+    opacity: 1;
+    width: 123.33333587646484px;
+    height: 23.33333396911621px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#profile_edit_button_background {
+    background-color: rgba(19.55001175403595, 111.04400262236595, 195.49999594688416, 1);
+    opacity: 1;
+    width: 123.33333587646484px;
+    height: 24px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#profile_edit_button_text {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 96.5px;
+    height: 10px;
+    position: absolute;
+    left: 13.5px;
+    top: 5px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+
+/*Navigation style group*/
+#navigation_block_group {
+    opacity: 1;
+    width: 200px;
+    height: 92.85713958740234px;
+    position: absolute;
+    left: 360px;
+    top: 270px;
+}
+
+#navigation_block_style {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 200px;
+    height: 92.85713958740234px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#navigation_block_background {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 200px;
+    height: 92.85713958740234px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#ic_home {
+    background-image: url(images/ic_home.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+#my_profile_group {
+    opacity: 1;
+    width: 162px;
+    height: 15px;
+    position: absolute;
+    left: 15px;
+    top: 12.142857551574707px;
+}
+
+#my_profile_text {
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    width: 137px;
+    height: 12px;
+    position: absolute;
+    left: 25px;
+    top: 2.857147216796875px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+#ic_search {
+    background-image: url(images/ic_search.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+#search_group {
+    opacity: 1;
+    width: 175.7142791748047px;
+    height: 15px;
+    position: absolute;
+    left: 15px;
+    top: 37.85714340209961px;
+}
+
+#search_text {
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    width: 150.7142791748047px;
+    height: 11.428571701049805px;
+    position: absolute;
+    left: 25px;
+    top: 2.142852783203125px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+#ic_message {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    background-image: url(images/ic_message.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+#message_group {
+    opacity: 1;
+    width: 175.7142791748047px;
+    height: 15px;
+    position: absolute;
+    left: 15px;
+    top: 62.14285659790039px;
+}
+
+#message_text {
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    width: 150.7142791748047px;
+    height: 11.428571701049805px;
+    position: absolute;
+    left: 25px;
+    top: 1.857147216796875px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+
+/*My contacts style group*/
+.contacts_name{
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+.contact_avatar {
+    border-radius: 500px;
+    opacity: 1;
+    border: 1px solid rgba(3.846246236935258, 0, 192.31249898672104, 1);
+    /*box-shadow: 0px 1px 5px gray;*/
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts_group {
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 360px;
+    top: 378px;
+}
+
+#contacts_group_style {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#contact_label {
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    width: 96.66666412353516px;
+    height: 16.66666603088379px;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+#contact_delimiter {
+    opacity: 1;
+    border: 1px solid rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 166.6666717529297px;
+    height: 0px;
+    position: absolute;
+    left: 16px;
+    top: 25px;
+}
+
+#contact1_avatar {
+    left: 16.66657066345215px;
+    top: 42.66667938232422px;
+    background-image: url(images/avatar1.png);
+}
+
+#contact1_name {
+    width: 47.33333206176758px;
+    height: 17.33333396911621px;
+    position: absolute;
+    left: 16.66657066345215px;
+    top: 95px;
+}
+
+#contact2_avatar {
+    left: 76.66651153564453px;
+    top: 42.66667938232422px;
+    background-image: url(images/avatar2.png);
+}
+
+#contact2_name {
+    width: 46.66666793823242px;
+    height: 17.33333396911621px;
+    position: absolute;
+    left: 76.66651153564453px;
+    top: 95px;
+}
+
+#contact3_avatar {
+    left: 135.99990844726562px;
+    top: 42.66667938232422px;
+    background-image: url(images/avatar3.png);
+}
+
+#contact3_name {
+    width: 47.33333206176758px;
+    height: 17.33333396911621px;
+    position: absolute;
+    left: 135.99990844726562px;
+    top: 95px;
+}
+
+#contact4_avatar {
+    left: 16.66657066345215px;
+    top: 112.66667175292969px;
+    background-image: url(images/avatar4.png);
+}
+
+#contact4_name {
+    width: 47.33333206176758px;
+    height: 17.33333396911621px;
+    position: absolute;
+    left: 16.66657066345215px;
+    top: 165px;
+}
+
+
+/*Meeting style group*/
+#meeting_group {
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 360px;
+    top: 593px;
+}
+
+#meeting_group_style {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+#meeting_label {
+    color: rgba(130.0000074505806, 130.0000074505806, 130.0000074505806, 1);
+    opacity: 1;
+    width: 146.6666717529297px;
+    height: 16.66666603088379px;
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+#meeting_delimiter {
+    opacity: 1;
+    border: 1px solid rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 166.6666717529297px;
+    height: 0px;
+    position: absolute;
+    left: 17px;
+    top: 27px;
+}
+
+#meeting_image {
+    opacity: 1;
+    width: 142.09400939941406px;
+    height: 88.66666412353516px;
+    position: absolute;
+    left: 28.66666603088379px;
+    top: 54px;
+    background-image: url(images/e________________.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#no_meeting_label {
+    color: rgba(189.00000393390656, 189.00000393390656, 189.00000393390656, 1);
+    opacity: 1;
+    width: 139.3333282470703px;
+    height: 34px;
+    position: absolute;
+    left: 30px;
+    top: 153px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+
+/*My pets style group*/
+#my_pets_group {
+    opacity: 1;
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    left: 575px;
+    top: 20px;
+}
+
+#my_pets_group_style {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#my_pets_add_button {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 133.33334350585938px;
+    height: 29.338233947753906px;
+    position: absolute;
+    left: 233px;
+    top: 536.8896484375px;
+}
+
+#my_pets_add_button_style {
+    background-color: rgba(19.55001175403595, 111.04400262236595, 195.49999594688416, 1);
+    opacity: 1;
+    width: 133.33334350585938px;
+    height: 29.338233947753906px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#my_pets_add_button_text {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    width: 104.34783172607422px;
+    height: 14.66911506652832px;
+    position: absolute;
+    left: 14.492752075195312px;
+    top: 7.124997615814209px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+#my_pets_no_pets_label {
+    color: rgba(189.00000393390656, 189.00000393390656, 189.00000393390656, 1);
+    opacity: 1;
+    width: 480px;
+    height: 31.294118881225586px;
+    position: absolute;
+    left: 60px;
+    top: 109.52941131591797px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: undefined;
+}
+
+#no_pets_image {
+    opacity: 1;
+    width: 382px;
+    height: 374px;
+    position: absolute;
+    left: 105px;
+    top: 125.17646789550781px;
+    background-image: url("images/no_pets.png");
+    /*background-repeat: no-repeat;*/
+}

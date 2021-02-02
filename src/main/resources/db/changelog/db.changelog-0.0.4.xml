@@ -1,0 +1,9 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="1.0" author="Ilnur Kalimullin">
+        <renameColumn newColumnName="from_user"  oldColumnName="from" tableName="message"/>
+        <renameColumn newColumnName="to_user"  oldColumnName="to" tableName="message"/>
+    </changeSet>
+</databaseChangeLog>
