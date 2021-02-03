@@ -70,7 +70,6 @@
                 <div id="pet_profile_group_background" style="height: <%=mainContainer%>px"></div>
                 <div id="pet_main_info_group" style="height: <%=petMainControlBlockHeight%>px;">
                     <div id="general_my_pet_background"></div>
-                        <%--                    <div id="pet_avatar"></div>--%>
                     <div id="pet_avatar">
                         <img id="e344_686" src="/pet_image?id=${pet.id}" width="100" height="100"/>
                     </div>
@@ -129,6 +128,13 @@
                                 </span>
                     <span id="label_pet_type">${pet.typePet.typeName}</span>
                 </div>
+
+                <div id="pet_buttons_sales_history">
+                        <a href="/user/story_pet?id=${pet.id}">
+                            <button type=button class="button btn_edit_profile">История продаж</button>
+                        </a>
+                </div>
+
             </div>
         </div>
         </sec:authorize>
